@@ -2,6 +2,7 @@
 body 
 	background-color #F7F7F7
 	text-align center
+	overflow-x hidden
 h1 
 	font-size 48
 	
@@ -11,7 +12,7 @@ h1
 	position fixed
 	text-align center
 	width 100%
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 	z-index 99
 	&-nav
 		display flex
@@ -49,7 +50,7 @@ input#show-menu[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
-// cover
+// Cover
 .cover
 	background-image url("../images/bg_home.png")
 	background-size cover
@@ -59,6 +60,7 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	padding-top 9em
 	margin 0
 	text-align center
+	max-width 100%
 	&-title
 		margin-bottom 0
 		text-align center
@@ -88,17 +90,122 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 		
 	
 // Presentacion
+#quehacemos
+	margin-bottom 0.3em
+.presentacion-p
+	color #0E0E0E
+	font-size 1.55em
+	max-width 700px
+	text-align center
+	margin 0 auto
+	margin-top 0.3em
+	
 // Barrrio abierto
+.bg-barrio_abierto
+	background-size cover
+	background-attachment fixed
+	background-repeat no-repeat
+	margin 0
+	text-align center
+	max-width 100%
+.img-align
+	display flex
+	margin 0.8em 2.5em
+.img-barrio_abierto
+	max-width 240px
+	justify-content flex-start
+.barrio-abierto-p
+	color #6B6B6B
+	font-size 1.4em
+	font-weight 400
+.barrio-abierto-subscribite
+	color #6B6B6B
+	font-size 1.2em
+.amatic
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em
+	
 // Transformadores
+.fondo-content
+	background-image url("../images/bg_transformadores_sociales.png")
+	background-size cover
+	background-attachment fixed
+	background-repeat no-repeat
+	padding 12em 2em
+	margin 0
+	text-align left
+	max-width 100%
+	z-index 99
+.bg-transformadores
+	background-size cover
+	background-attachment fixed
+	background-repeat no-repeat
+	margin 0
+	text-align center
+	max-width 100%
+.img-align-transformadores
+	display flex
+	margin 0.8em 2.5em
+	justify-content flex-end
+.img-transformadores-sociales
+	align-self flex-end
+.separator-orange
+	background-color #EE9661
+	height 36px
+	width 100%
+.transformadores-button
+		background #42B0A9
+		color white
+		width 200px
+		text-align center
+		border-radius 6px
+		border none
+		padding .5em
+		font-size 1.6em
+		font-weight 700
+		display block
+	&-button:hover 
+		background-color #2AC6BC
+		cursor pointer
 // Casos
-// Mate
+// Mate	
+.mate-texto
+	color #0E0E0E
+	font-size 1.35em
+	max-width 700px
+	text-align center
+	margin 0 auto
+	margin-top 0.3em
+.mate-imgs
+	display flex
+	padding 0px
+	&-item
+		justify-content flex-wrap
+		max-width 450px
+		
+
 // Alianzas
 // Contacto
-// footer
+// Footer
 
 // Utilities
+.puntos
+	max-width 40px
+.u-padding-0
+	padding 0em
+.u-padding-left-right-5
+	padding-left 0.5em
+	padding-right 0.5em
+.u-margin-0
+	margin 0em
 .u-white
 	color #fff
+.u-font-weight-400
+	font-weight 400
+.u-width-700px
+	max-width 700px	
+.u-violeta
+	color #D00155
 .u-ico	
 	display inline-block
 	margin-right .8em	
@@ -106,10 +213,12 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	margin-right 5px
 .u-m-b-5
 	margin-bottom 5px
+.u-m-b-50
+	margin-bottom 50px
 .u-dark-back
-	background #868686
+	background #f5b63f
 	color #fff
-	height 4.5em
+	height 4em
 	box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
 .u-underlined 
 	text-decoration underline
@@ -122,6 +231,7 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	height 72px 
 	margin-top -72px 
 	visibility hidden
-.noscroll
+.noscroll-y
 	overflow-y hidden
-
+.noscroll-x
+	overflow-x hidden

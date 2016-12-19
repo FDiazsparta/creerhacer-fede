@@ -1,0 +1,45 @@
+section#pre-footer
+      // Mapa y informacion de contacto
+      section.map-info
+        // Mapa de google con la direccion de Creearhacer
+        #map
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.1101377435734!2d-58.55387558432968!3d-34.500091980486296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb078e1a14a13%3A0x8cb69eef576e8bc0!2sCreerHacer!5e0!3m2!1ses-419!2sar!4v1480983893058', width='400', height='300', frameborder='0', allowfullscreen='')
+        div info@creerhacer.com.ar
+        div Coronel Bogado 571 - Boulogne, San Isidro
+        // Enlaces a redes sociales
+        #contacto-redes
+          a#twitter(href='https://twitter.com/CreerHacer', target='_blank')
+            img(src='images/twitter_circle_color-256-3.png')
+          a#facebook(href='https://www.facebook.com/CreerHacer/', target='_blank')
+            img(src='images/facebook-circle.png')
+          a#youtube(href='https://www.youtube.com/channel/UCd_-XOq5iZEQEdT66HaKfEQ', target='_blank')
+            img(src='images/youtube_circle_color-512-2.png')
+      section.contacto
+        // Formulario de contacto
+        form.contacto-form(method='post', action='send.php', name='contactform')
+          .contacto-form-column
+            h2.contacto-title Contactanos
+            label.contacto-form-label Mail
+            br
+            input#mail.contacto-form-input(type='mail', name='mail', pattern='^[A-Za-z0-9](([_.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*).([A-Za-z]{2,})$', required='required')
+            br
+            label.contacto-form-label Nombre Completo
+            br
+            input#name.contacto-form-input(type='text', name='nombre', required='required')
+            br
+            | 			          Soy de una organización
+            input.contacto-form-checkbox(type='checkbox')
+            | 			          Soy una Empresa
+            input.contacto-form-checkbox(type='checkbox')
+            | 			          Otro
+            input.contacto-form-checkbox(type='checkbox')
+          // Cuadro de comentarios
+          .contacto-form-column
+            label.contacto-form-label Mensaje:
+            br
+            input#comments.contacto-form-input(type='text', name='comentario', <='', input='')
+            br
+            button#submit.contacto-button(type='submit', value='Enviar') Enviar
+        // Span para id de nav
+        span#contacto
+    // Footer con logo y redes

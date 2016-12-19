@@ -1,0 +1,127 @@
+// CreerHacer - body General Text
+body 
+	background-color #F7F7F7
+	text-align center
+h1 
+	font-size 48
+	
+// Header	
+.header
+	color white
+	position fixed
+	text-align center
+	width 100%
+	transition: all 0.5s ease;
+	z-index 99
+	&-nav
+		display flex
+		justify-content space-around
+	&-logo-container
+		display inline-block
+		margin 1em 3em
+	&-logo
+		width 110px
+	&-list
+		display inline-block
+		list-style none
+		text-transform uppercase
+		margin 1.5em auto
+		justify-content flex-end
+		&-item
+			display inline-block
+			padding 0 2em
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: none;
+	color: #504f4f;
+	text-align: right;
+	display: none;
+	text-transform uppercase
+}
+
+/*Hide checkbox*/
+input#show-menu[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input#show-menu[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+// cover
+.cover
+	background-image url("../images/bg_home.png")
+	background-size cover
+	background-attachment fixed
+	background-repeat no-repeat
+	padding 7em
+	padding-top 9em
+	margin 0
+	text-align center
+	&-title
+		margin-bottom 0
+		text-align center
+		max-width 1000px
+	&-copy
+		font-size 1.2em
+		margin-top .5em
+		line-height 150%
+		color #fff
+		text-align center
+	&-button
+		background #F5B63F
+		color white
+		width 200px
+		text-align center
+		border-radius 6px
+		border none
+		padding .8em
+		font-size 1.2em
+		font-weight 700
+		display block
+		align-self center
+		margin 0 auto
+	&-button:hover 
+		background-color #FFAD11
+		cursor pointer
+		
+	
+// Presentacion
+// Barrrio abierto
+// Transformadores
+// Casos
+// Mate
+// Alianzas
+// Contacto
+// footer
+
+// Utilities
+.u-white
+	color #fff
+.u-ico	
+	display inline-block
+	margin-right .8em	
+.u-m-r-5
+	margin-right 5px
+.u-m-b-5
+	margin-bottom 5px
+.u-dark-back
+	background #868686
+	color #fff
+	height 4.5em
+	box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
+.u-underlined 
+	text-decoration underline
+.u-m-l-n2
+	margin-left -2em
+.display-none
+	display none
+.anchor
+	display inline-block
+	height 72px 
+	margin-top -72px 
+	visibility hidden
+.noscroll
+	overflow-y hidden
+

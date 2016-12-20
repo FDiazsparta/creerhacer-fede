@@ -2,9 +2,8 @@
 body 
 	background-color #F7F7F7
 	text-align center
-	overflow-x hidden
 h1 
-	font-size 48
+	font-size 52
 	
 // Header	
 .header
@@ -42,12 +41,12 @@ h1
 
 /*Hide checkbox*/
 input#show-menu[type=checkbox]{
-    display: none;
+	display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
 input#show-menu[type=checkbox]:checked ~ #menu{
-    display: block;
+	display: block;
 }
 
 // Cover
@@ -169,8 +168,48 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 .transformadores-button:hover 
 		background-color #2AC6BC
 		cursor pointer
+.transformadores-text-title
+	font-size 52
 // Casos
-// Mate	
+.casos
+	max-width 100%
+	vw 100
+.casos-button
+	background #EE9661
+	color white
+	width 200px
+	text-align center
+	border-radius 6px
+	border none
+	padding 1em
+	font-size 1em
+	font-weight 700
+	display block
+	box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
+	margin-top 15em
+.casos-container
+	display flex
+	flex-wrap row
+	justify-content center
+	padding 2em 0em
+	max-width 100%
+.casos-container-img
+	z-index -99
+	display flex
+	justify-content center
+	position relative
+.casos-container-item-left
+	position absolute
+	text-align left
+	padding 1em
+.casos-container-item-right
+	position absolute
+	text-align right
+	padding 1em
+.casos-img
+	width 400px
+		
+// Mate
 .mate-texto
 	color #0E0E0E
 	font-size 1.35em
@@ -205,7 +244,9 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 .u-font-weight-400
 	font-weight 400
 .u-width-700px
-	max-width 700px	
+	max-width 700px
+.u-width-400px
+	max-width 400px	
 .u-violeta
 	color #D00155
 .u-ico	
@@ -226,6 +267,8 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	text-decoration underline
 .u-m-l-n2
 	margin-left -2em
+.u-right
+	margin-left 13em
 .display-none
 	display none
 .anchor

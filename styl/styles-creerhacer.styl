@@ -72,25 +72,47 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 		line-height 150%
 		color #fff
 		text-align center
-	&-button
-		background #F5B63F
-		color white
-		width 200px
-		text-align center
-		border-radius 6px
-		border none
-		padding .8em
-		font-size 1.2em
-		font-weight 700
-		display block
-		align-self center
-		margin 0 auto
-		box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
-	&-button:hover 
-		background-color #FFAD11
-		cursor pointer
 		
-	
+// Casos
+.casos-button
+	background #EE9661
+	color white
+	width 200px
+	text-align center
+	border-radius 6px
+	border none
+	padding 1em
+	font-size 1em
+	font-weight 700
+	display block
+	box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
+	margin-top 15em
+	z-index -99
+.casos-button:hover 
+	background-color #FFA067
+	cursor pointer
+.casos-container
+	display flex
+	flex-wrap row
+	justify-content center
+	padding 3em 0em
+	max-width 100%
+.casos-container-img
+	z-index -99
+	display flex
+	justify-content center
+	position relative
+.casos-container-item-left
+	position absolute
+	text-align left
+	padding 1em
+.casos-container-item-right
+	position absolute
+	text-align right
+	padding 1em
+.casos-img
+	width 300px
+		
 // Presentacion
 #quehacemos
 	margin-bottom 0.3em
@@ -112,6 +134,23 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	margin 0
 	text-align center
 	max-width 100%
+.barrio-abierto-video-container
+	display flex
+	justify-content space-between
+	flex-direction row
+.barrio-abierto-video-item
+	margin 0.2em
+	padding 1em	
+.barrio-iconos
+	display flex
+	justify-content space-around
+	flex-direction row
+.barrio-abierto-video
+	width 383px 
+	height 216px
+.barrio-abierto-item
+	margin 1em
+	padding .5em	
 .img-align
 	display flex
 	margin 0.8em 2.5em
@@ -131,11 +170,6 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 	
 // Transformadores
 .fondo-content
-	background-image url("../images/bg_transformadores_sociales.png")
-	background-size cover
-	background-repeat no-repeat
-	padding 11em 2em
-	margin 0
 	text-align left
 	max-width 100%
 	z-index 99
@@ -173,46 +207,7 @@ input#show-menu[type=checkbox]:checked ~ #menu{
 		cursor pointer
 .transformadores-text-title
 	font-size 52
-// Casos
-.casos-button
-	background #EE9661
-	color white
-	width 200px
-	text-align center
-	border-radius 6px
-	border none
-	padding 1em
-	font-size 1em
-	font-weight 700
-	display block
-	box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2)
-	margin-top 15em
-	z-index -99
-.casos-button:hover 
-	background-color #FFA067
-	cursor pointer
-.casos-container
-	display flex
-	flex-wrap row
-	justify-content center
-	padding 2em 0em
-	max-width 100%
-.casos-container-img
-	z-index -99
-	display flex
-	justify-content center
-	position relative
-.casos-container-item-left
-	position absolute
-	text-align left
-	padding 1em
-.casos-container-item-right
-	position absolute
-	text-align right
-	padding 1em
-.casos-img
-	width 400px
-		
+
 // Mate
 .mate
 	padding-top 2em
